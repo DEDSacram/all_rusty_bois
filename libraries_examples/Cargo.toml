@@ -1,0 +1,38 @@
+[package]
+name = "libraries_examples"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pollster = "0.3.0"
+rfd = "0.11.3"
+
+
+
+
+
+
+
+[[example]]
+name = "csv_read"
+path = "examples/files/choose_and_read.rs"
+
+[package.metadata.example.csv_read]
+name = "Reading csv file"
+description = "Using rfd library"
+category = "Working with files"
+
+[[example]]
+name = "gpu_surface"
+path = "examples/graphics/surface/src/main.rs"
+
+
+
+[package.metadata.example.gpu_surface]
+name = "Gpu surface"
+description = "Using gpu Surface"
+category = "Graphics Tutorial"
+
+
